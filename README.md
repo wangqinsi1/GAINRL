@@ -6,7 +6,7 @@
 
 In this paper, We show that **the angle concentration of hidden‑state vectors is an intrinsic indicator of how much an LLM can learn from a sample, tightly correlating with gradient strength.** Leveraging this signal, GAIN‑RL dynamically selects the most informative examples each epoch, keeping gradient updates impactful and slashing the sample waste that plagues standard RFT. On diverse math and coding benchmarks—and at multiple model scales—GAIN‑RL delivers >2.5× faster training and beats vanilla GRPO with just half the original data.
 
-**Paper Link:** 
+**Paper Link:** [https://arxiv.org/abs/2506.02281](https://arxiv.org/abs/2506.02281)
 
 
 

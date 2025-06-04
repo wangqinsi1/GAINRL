@@ -168,7 +168,15 @@ python evaluation/eval_gsm8k.py \
 More technical details can be found in our paper. If you find GAINRL useful or relevant to your project and research, please kindly cite our paper:
 
 ```
-
+@misc{wang2025anglesdontlieunlocking,
+      title={Angles Don't Lie: Unlocking Training-Efficient RL Through the Model's Own Signals}, 
+      author={Qinsi Wang and Jinghan Ke and Hancheng Ye and Yueqian Lin and Yuzhe Fu and Jianyi Zhang and Kurt Keutzer and Chenfeng Xu and Yiran Chen},
+      year={2025},
+      eprint={2506.02281},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.02281}, 
+}
 ```
 
 

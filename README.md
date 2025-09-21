@@ -16,11 +16,29 @@ In this paper, We show that **the angle concentration of hidden‑state vectors 
 
 **The current release version includes:**
 
+✅  **Release all trained models and data:** We released all trained models and the data used.
+
 ✅  **Integrated GAIN-RL into [verl](https://github.com/volcengine/verl/tree/main):**  We implemented GAINRL on `verl`. You can enable GAINRL simply by adding `data.gainrl.enable=enable` to the command line.
 
 ✅  **Integrated GAIN-RL into [trl](https://github.com/huggingface/trl):**  We provide GAINRL training script using `transformers.Trainer`  and `trl`. You can now easily use GAIN-RL and make changes.
 
 ✅  **Comprehensive performance evaluation:** We provide evaluation scripts for different datasets in *evaluation/*, taking into account the characteristics of different datasets.
+
+
+**To Do List:**
+- [ ] Publish the code that runs on the code task.
+
+
+## GainRL Model and Dataset
+| Model       |  Link|
+| ----------- | --------- |
+| Qwen2.5-Math-0.5B-Instruct-GSM8K/MATH/AMC  | [Qinsi1/GAINRL-Qwen2.5-0.5B-Instruct](https://huggingface.co/Qinsi1/GAINRL-Qwen2.5-0.5B-Instruct)|
+| Qwen2.5-Math-1.5B-Instruct-Deepscaler  | [Qinsi1/GAINRL-Qwen2.5-Math-1.5B-Instruct](https://huggingface.co/Qinsi1/GAINRL-Qwen2.5-Math-1.5B-Instruct)|
+| Qwen2.5-Math-7B-Instruct-Deepscaler    | [Qinsi1/GAINRL-Qwen2.5-Math-7B-Instruct](https://huggingface.co/Qinsi1/GAINRL-Qwen2.5-7B-Instruct)|
+| LLaMA-3.2-3B-Instruct-Deepscaler | [Qinsi1/GAINRL-LLaMA-3.2-3B-Instruct](https://huggingface.co/Qinsi1/GAINRL-LLaMA-3.2-3B-Instruct)|
+| Qwen2.5-Coder-3B-Instruct-Deepcoder   | [Qinsi1/GAINRL-Qwen2.5-Coder-3B-Instruct](https://huggingface.co/Qinsi1/GAINRL-Qwen2.5-Coder-3B-Instruct) |
+| Math+Code Data  | [Qinsi1/angle_data](https://huggingface.co/Qinsi1/angle_data) |
+
 
 
 

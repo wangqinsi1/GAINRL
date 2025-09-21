@@ -1,20 +1,24 @@
 # **Angles Don’t Lie: Unlocking Training-Efficient RL Through the Model’s Own Signals**
 
+###  NeurIPS 2025 Spotlight
 
+[Qinsi Wang](https://wangqinsi1.github.io/)<sup>1</sup>, [Jinghan Ke](https://ah-miu.github.io/)<sup>2</sup>, [Hancheng Ye](https://openreview.net/profile?id=%7EHancheng_Ye1)<sup>1</sup>, [Yueqian Lin](https://openreview.net/profile?id=~Yueqian_Lin2)<sup>1</sup>, [Yuzhe Fu](https://yuzhe-fu.github.io/)<sup>1</sup>, [Jianyi Zhang](https://jayzhang42.github.io/graphical_homepage/)<sup>1</sup>, [Kurt Keutzer](https://scholar.google.com/citations?user=ID9QePIAAAAJ&hl=en&oi=ao)<sup>2</sup>, [Chenfeng Xu](https://www.chenfengx.com/)<sup>2\*</sup>, [Yiran Chen](https://scholar.google.com/citations?user=3G-nnjMAAAAJ&hl=en&oi=ao)<sup>1\*</sup>
 
-## TL;DR
+<sup>1</sup>Duke University, <sup>2</sup>University of California, Berkeley, <sup>*</sup>corresponding author
 
-In this paper, We show that **the angle concentration of hidden‑state vectors is an intrinsic indicator of how much an LLM can learn from a sample, tightly correlating with gradient strength.** Leveraging this signal, GAIN‑RL dynamically selects the most informative examples each epoch, keeping gradient updates impactful and slashing the sample waste that plagues standard RFT. On diverse math and coding benchmarks—and at multiple model scales—GAIN‑RL delivers >2.5× faster training and beats vanilla GRPO with just half the original data.
+### TL;DR
 
-**Paper Link:** [https://arxiv.org/abs/2506.02281](https://arxiv.org/abs/2506.02281)
+In this paper, We show that **the angle concentration of hidden‑state vectors is an intrinsic indicator of how much an LLM can learn from a sample, tightly correlating with gradient strength.** Leveraging this signal, **GAIN‑RL** dynamically selects the most informative examples each epoch, keeping gradient updates impactful and slashing the sample waste that plagues standard RFT. On diverse math and coding benchmarks—and at multiple model scales—GAIN‑RL delivers >2.5× faster training and beats vanilla GRPO with just half the original data.
 
+Paper Link: [https://arxiv.org/abs/2506.02281](https://arxiv.org/abs/2506.02281)
 
+### Overview
 
 ![Overview](images/angles-new-overview.png)**Overview of GAIN-RL.** GAIN-RL consists of three steps: *(1) Angle-based Data Reordering*: Before training, the model pre-fills all data and ranks them by the combined angle concentration signals: $C_{\text{inter}} + C_{\text{intra}}$. *(2) Gaussian-based Data Sampling*: During training, each epoch begins by sampling reordered data using a Gaussian distribution. *(3) Dynamic Probability Update*: Epoch-wise accuracy and angle concentration are collected to dynamically update $µ_{t+1}$. GAIN-RL guides the model to focus on high-angle, high-loss data, promoting effective gradients and faster convergence.
 
 
 
-**The current release version includes:**
+### **The current release version includes:**
 
 ✅  **Release all trained models and data:** We released all trained models and the data used.
 
@@ -25,7 +29,7 @@ In this paper, We show that **the angle concentration of hidden‑state vectors 
 ✅  **Comprehensive performance evaluation:** We provide evaluation scripts for different datasets in *evaluation/*, taking into account the characteristics of different datasets.
 
 
-**To Do List:**
+### **To Do List:**
 - [ ] Publish the code that runs on the code task.
 
 

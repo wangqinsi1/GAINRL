@@ -10,7 +10,7 @@ In this paper, We show that **the angle concentration of hidden‑state vectors 
 
 
 
-![Overview](images/overview.png)**Overview of GAIN-RL.** GAIN-RL consists of three steps: *(1) Angle-based Data Reordering*: Before training, the model pre-fills all data and ranks them by the combined angle concentration signals: *C*inter + *C*intra. *(2) Gaussian-based Data Sampling*: During training, each epoch begins by sampling reordered data using a Gaussian distribution. *(3) Dynamic Probability Update*: Epoch-wise accuracy and angle concentration are collected to dynamically update *µt*+1. GAIN-RL guides the model to focus on high-angle, high-loss data, promoting effective gradients and faster convergence.
+![Overview](images/angles-new-overview.png)**Overview of GAIN-RL.** GAIN-RL consists of three steps: *(1) Angle-based Data Reordering*: Before training, the model pre-fills all data and ranks them by the combined angle concentration signals: $C_{\text{inter}} + C_{\text{intra}}$. *(2) Gaussian-based Data Sampling*: During training, each epoch begins by sampling reordered data using a Gaussian distribution. *(3) Dynamic Probability Update*: Epoch-wise accuracy and angle concentration are collected to dynamically update $µ_{t+1}$. GAIN-RL guides the model to focus on high-angle, high-loss data, promoting effective gradients and faster convergence.
 
 
 
@@ -197,5 +197,6 @@ More technical details can be found in our paper. If you find GAINRL useful or r
 }
 ```
 
-
+## License
+This project is licensed under the MIT License.
 
